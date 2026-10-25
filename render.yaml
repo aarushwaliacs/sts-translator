@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: sts-translator
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: LIBRETRANSLATE_URL
+        value: https://libretranslate.com
+      - key: LIBRETRANSLATE_API_KEY
+        sync: false

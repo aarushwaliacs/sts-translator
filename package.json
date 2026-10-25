@@ -1,0 +1,13 @@
+{
+  "name": "sts-translator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "STS Translator web app with configurable remote LibreTranslate backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
